@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Include the JavaScript file for the dice roll functionality -->
+		<script src="../JS/script.js"></script>
+		<title>Dice Rolls</title>
+		<!-- Include the CSS file for styling the page -->
+		<link rel="stylesheet" href="../CSS/style.css" />
+		<link rel="icon" type="image/x-icon" href="/assets/dice-solid.svg" />
+	</head>
+	<body>
+		<!-- Title bar with the application logo, title, refresh button, and GitHub link -->
+		<div id="titlebar">
+			<h1>
+				<img
+					id="dice"
+					src="../assets/game-die.993x1024.png"
+					alt="Dice Icon"
+				/>
+				Dice Rolls
+			</h1>
+			<button onclick="window.location.reload()">Refresh</button>
+			<a
+				href="https://github.com/your-username/your-repository"
+				target="_blank"
+			>
+				<img src="https://github.com/fluidicon.png" alt="GitHub" />
+				GitHub Repository
+			</a>
+			<br />
+			<!-- Display the version number -->
+			<span id="version"></span>
+			<script>
+				// Set the version number dynamically using the JavaScript variable
+				document.getElementById("version").innerHTML =
+					"Version: " + version;
+			</script>
+		</div>
+		<!-- Main content area with the heading, input fields, run button, and output div -->
+		<div id="content">
+			<h1 id="heading">Dice Rolls</h1>
+			<!-- Input field for the maximum number of sides on the dice -->
+			<!-- <input
+                type="number"
+                id="minnum"
+                placeholder="Enter minimum Number here... "
+            /> -->
+			<input
+				type="number"
+				id="maxnum"
+				placeholder="Enter Number of Sides here (e.g. 6 for a D6)... "
+			/>
+			<!-- Input field for the number of dice rolls -->
+			<input
+				type="number"
+				id="rolls"
+				placeholder="Enter number of rolls here... "
+			/>
+			<!-- Run button to initiate the dice rolls -->
+			<button onclick="javascript:main()">Run</button>
+			<!-- Div element to display the output of the dice rolls -->
+			<div id="output"></div>
+		</div>
+	</body>
+</html>

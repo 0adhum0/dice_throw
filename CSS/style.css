@@ -1,0 +1,166 @@
+input {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 3px;
+	color: #eeeeee;
+	background-color: #508c9b;
+	border-radius: 40px;
+	border-color: #201e43;
+	border-style: solid;
+	background: rgb(32, 30, 67);
+	background: linear-gradient(
+		204deg,
+		rgba(32, 30, 67, 1) 0%,
+		rgba(19, 75, 112, 1) 43%,
+		rgba(80, 140, 155, 1) 100%
+	);
+}
+
+/*placeholder color*/
+::placeholder {
+	color: #cccccc !important; /* Change this color to your desired placeholder text color */
+}
+::-webkit-input-placeholder {
+	color: #cccccc !important; /* Change this color to your desired placeholder text color */
+}
+:-ms-input-placeholder {
+	color: #cccccc !important; /* Change this color to your desired placeholder text color */
+}
+::-moz-placeholder {
+	color: #cccccc !important; /* Change this color to your desired placeholder text color */
+}
+*:focus {
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+#titlebar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #cccccc;
+	background: rgb(32, 30, 67);
+	background: linear-gradient(
+		204deg,
+		rgba(32, 30, 67, 1) 0%,
+		rgba(19, 75, 112, 1) 22%,
+		rgba(80, 140, 155, 1) 77%
+	);
+	padding: 5px; /* Adjust this value to change the padding */
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#titlebar button {
+	margin: 0; /* Remove the margin from the button */
+	background: none;
+	border: none;
+	text-decoration: underline;
+}
+
+#titlebar #dice {
+	width: 40px;
+	height: 40px;
+}
+
+#titlebar a {
+	margin: 0; /* Remove the margin from the anchor tag */
+	padding-right: 20px;
+	display: flex;
+	align-items: center;
+	color: #cccccc;
+	justify-content: flex-end; /* Change this property to align the link to the right */
+	flex: 1; /* Add this property to make the link take up the remaining space */
+}
+
+#titlebar h1 {
+	display: flex;
+	align-items: center;
+	color:#eeeeee;
+}
+
+#titlebar img {
+	margin-right: 10px; /* Add some right margin to the image */
+	width: 20px; /* Adjust this value to change the size of the image */
+	height: 20px; /* Adjust this value to change the size of the image */
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: rgb(7, 25, 82);
+	background: linear-gradient(
+		216deg,
+		rgba(7, 25, 82, 1) 0%,
+		rgba(8, 131, 149, 1) 52%,
+		rgba(55, 183, 195, 1) 98%
+	);
+}
+
+#content {
+	margin-top: 100px;
+	width: 400px;
+	padding: 20px;
+	border-radius: 5px;
+	display: grid;
+	place-items: center;
+	box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
+	background: rgb(7, 25, 82);
+	background: linear-gradient(
+		216deg,
+		rgba(7, 25, 82, 1) 0%,
+		rgba(8, 131, 149, 1) 81%,
+		rgba(55, 183, 195, 1) 100%
+	);
+}
+
+#heading {
+	color: #eeeeee;
+	margin-bottom: 20px;
+}
+
+button {
+	margin-top: 20px;
+	color: #eeeeee;
+	border-radius: 20px;
+	border-color: #201e43;
+	border-style: solid;
+	background: rgb(32, 30, 67);
+	background: linear-gradient(
+		204deg,
+		rgba(32, 30, 67, 1) 0%,
+		rgba(19, 75, 112, 1) 43%,
+		rgba(80, 140, 155, 1) 100%
+	);
+}
+
+#output {
+	margin-top: 20px;
+	padding: 10px;
+	text-align: center;
+	color: #eeeeee;
+	max-height: 200px; /* Adjust this value to change the height of the scrollable area */
+	overflow: auto; /* Enable scrolling */
+	scrollbar-width: none; /* Hide the scrollbar for modern browsers */
+	-ms-overflow-style: none; /* Hide the scrollbar for Internet Explorer and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+#output::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
